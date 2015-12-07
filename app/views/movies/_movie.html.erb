@@ -1,2 +1,4 @@
-<%= image_tag movie.cover_image_url(:thumb).to_s %>
-<%= movie.title %>
+<%= div_for movie do %>
+  <%= image_tag movie.cover_image_url(:thumb).to_s %>
+  <%= movie.title %>
+<% end %>
